@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrayMain">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="18dp"
+        android:text="Mode:"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/radio_button_without"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textSize="14dp"
+            android:text="Without purpose"
+            android:buttonTint="#707070"
+            android:textColor="@android:color/black"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/radio_button_with"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textSize="14dp"
+            android:text="With purpose"
+            android:buttonTint="#707070"
+            android:textColor="@android:color/black"
+            android:checked="false" />
+    </RadioGroup>
+    <EditText
+        android:id="@+id/purpose_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="#707070"
+        android:hint="Purpose"
+        android:inputType="number"
+        android:backgroundTint="#707070" />
+</LinearLayout>
